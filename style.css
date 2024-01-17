@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #DCF2F1;
+}
+
+
+#drum-machine {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px 20px 20px 20px;
+
+    background: rgba(249, 165, 14, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(249, 165, 14, 0.91);
+}
+
+#display {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#volume-slider {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.drum-pads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.drum-pad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.drum-pad:hover {
+    background-color: #2980b9;
+}
+
+.clip {
+    display: none;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 80px;
+    cursor: pointer;
+    background-color: beige;
+}
